@@ -6,31 +6,36 @@
 }
 
 body {
-    background: black;
+    background: linear-gradient(to top, black, rgb(53, 0, 70), rgb(0, 0, 0));
+    height: 100vh;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
 .clock {
     position: absolute;
-    top: 50%;
+    top: 45.65%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Rubik Doodle Shadow';
     width: max-content;
     font-size: 4rem;
     letter-spacing: 15px;
-    color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
     text-shadow:
-      0 0 5px #ffffff,
-      0 0 10px #ffffff,
-      0 0 20px #ffffff,
-      0 0 40px rgb(255, 255, 255);
+      0 0 5px rgb(0, 0, 0),
+      0 0 10px rgb(0, 0, 0),
+      0 0 20px rgb(0, 0, 0),
+      0 0 40px rgb(0, 0, 0);
+      border-bottom: 2px solid rgba(42, 0, 56, 0.473);
+
   }
 
 .character {
     position: absolute;
     bottom: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 
